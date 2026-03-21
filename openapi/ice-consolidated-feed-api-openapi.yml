@@ -1,0 +1,112 @@
+openapi: 3.1.0
+info:
+  title: ICE Consolidated Feed API
+  description: >-
+    The ICE Consolidated Feed API provides access to ICE Data Services real-time
+    and delayed market data from exchanges operated by Intercontinental Exchange
+    including ICE Futures, NYSE, and other trading venues.
+  version: '1.0'
+servers:
+  - url: https://api.theice.com
+tags:
+  - name: Market Data
+    description: Access real-time and delayed market data.
+  - name: Instruments
+    description: Retrieve instrument and contract information.
+  - name: Reference Data
+    description: Access reference and static data.
+paths:
+  /marketdata/instruments:
+    get:
+      operationId: listInstruments
+      summary: List instruments
+      description: >-
+        Retrieves a list of available instruments and contracts across ICE
+        exchanges with filtering by exchange, product type, and status.
+      tags:
+        - Instruments
+      parameters:
+        - name: exchange
+          in: query
+          description: Filter by exchange code.
+          schema:
+            type: string
+        - name: productType
+          in: query
+          description: Filter by product type (futures, options, etc.).
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+  /marketdata/quotes:
+    get:
+      operationId: getQuotes
+      summary: Get market quotes
+      description: >-
+        Retrieves real-time or delayed market quotes for specified instruments
+        including bid, ask, last trade, and volume.
+      tags:
+        - Market Data
+      parameters:
+        - name: instrumentId
+          in: query
+          required: true
+          description: The instrument identifier.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+  /marketdata/history:
+    get:
+      operationId: getMarketHistory
+      summary: Get market data history
+      description: >-
+        Retrieves historical market data for a specified instrument including
+        OHLC prices, volume, and open interest.
+      tags:
+        - Market Data
+      parameters:
+        - name: instrumentId
+          in: query
+          required: true
+          description: The instrument identifier.
+          schema:
+            type: string
+        - name: startDate
+          in: query
+          description: Start date for historical data.
+          schema:
+            type: string
+            format: date
+        - name: endDate
+          in: query
+          description: End date for historical data.
+          schema:
+            type: string
+            format: date
+      responses:
+        '200':
+          description: Success
+  /reference/exchanges:
+    get:
+      operationId: listExchanges
+      summary: List exchanges
+      description: >-
+        Retrieves a list of exchanges operated by ICE including exchange codes,
+        names, and available product types.
+      tags:
+        - Reference Data
+      responses:
+        '200':
+          description: Success
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: Authorization
+    bearerAuth:
+      type: http
+      scheme: bearer
