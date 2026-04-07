@@ -1,5 +1,6 @@
 aid: intercontinental-exchange
-url: https://raw.githubusercontent.com/api-evangelist/intercontinental-exchange/refs/heads/main/apis.yml
+url: 
+  https://raw.githubusercontent.com/api-evangelist/intercontinental-exchange/refs/heads/main/apis.yml
 apis:
   - aid: intercontinental-exchange:consolidated-feed-api
     name: ICE Consolidated Feed API
@@ -9,13 +10,15 @@ apis:
       - Exchanges
       - Trading
       - Real-Time Data
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: 
+      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://api.theice.com
     humanURL: https://developer.theice.com/hc/en-us
     properties:
       - url: https://developer.theice.com/hc/en-us
         type: Portal
-      - url: https://developer.theice.com/hc/en-us/articles/200717514-About-the-Consolidated-Feed-API
+      - url: 
+          https://developer.theice.com/hc/en-us/articles/200717514-About-the-Consolidated-Feed-API
         type: Documentation
       - url: openapi/ice-consolidated-feed-api-openapi.yml
         type: OpenAPI
@@ -32,7 +35,8 @@ apis:
       - Reference Data
       - Financial Services
       - Analytics
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: 
+      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://idsportal.icedataservices.com
     humanURL: https://idsportal.icedataservices.com/marketdata
     properties:
@@ -52,7 +56,8 @@ apis:
       - Lending
       - Financial Services
       - Real Estate
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: 
+      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://api.mortgagetech.ice.com
     humanURL: https://mortgagetech.ice.com/products/developer-portal
     properties:
@@ -66,3 +71,7 @@ apis:
       mortgage lending applications. It includes a comprehensive integration
       catalog representing the servicing life cycle for mortgage origination
       and servicing workflows.
+description: >-
+  Intercontinental Exchange (ICE) is a leading global operator of regulated exchanges,
+  clearing houses, listings, data, and technology services across futures, equities,
+  fixed income, and mortgage markets.
