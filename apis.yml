@@ -1,24 +1,21 @@
 aid: intercontinental-exchange
-url: 
-  https://raw.githubusercontent.com/api-evangelist/intercontinental-exchange/refs/heads/main/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/intercontinental-exchange/refs/heads/main/apis.yml
 apis:
   - aid: intercontinental-exchange:consolidated-feed-api
     name: ICE Consolidated Feed API
     tags:
+      - Exchanges
       - Financial Data
       - Market Data
-      - Exchanges
-      - Trading
       - Real-Time Data
-    image: 
-      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+      - Trading
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://api.theice.com
     humanURL: https://developer.theice.com/hc/en-us
     properties:
       - url: https://developer.theice.com/hc/en-us
         type: Portal
-      - url: 
-          https://developer.theice.com/hc/en-us/articles/200717514-About-the-Consolidated-Feed-API
+      - url: https://developer.theice.com/hc/en-us/articles/200717514-About-the-Consolidated-Feed-API
         type: Documentation
       - url: openapi/ice-consolidated-feed-api-openapi.yml
         type: OpenAPI
@@ -31,12 +28,11 @@ apis:
   - aid: intercontinental-exchange:data-services-api
     name: ICE Data Services API
     tags:
+      - Analytics
+      - Financial Services
       - Market Data
       - Reference Data
-      - Financial Services
-      - Analytics
-    image: 
-      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://idsportal.icedataservices.com
     humanURL: https://idsportal.icedataservices.com/marketdata
     properties:
@@ -52,12 +48,11 @@ apis:
   - aid: intercontinental-exchange:mortgage-technology-api
     name: ICE Mortgage Technology Developer Portal
     tags:
-      - Mortgage
-      - Lending
       - Financial Services
+      - Lending
+      - Mortgage
       - Real Estate
-    image: 
-      https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
     baseURL: https://api.mortgagetech.ice.com
     humanURL: https://mortgagetech.ice.com/products/developer-portal
     properties:

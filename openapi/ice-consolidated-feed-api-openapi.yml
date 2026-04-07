@@ -9,10 +9,10 @@ info:
 servers:
   - url: https://api.theice.com
 tags:
-  - name: Market Data
-    description: Access real-time and delayed market data.
   - name: Instruments
     description: Retrieve instrument and contract information.
+  - name: Market Data
+    description: Access real-time and delayed market data.
   - name: Reference Data
     description: Access reference and static data.
 paths:
