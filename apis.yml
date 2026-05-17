@@ -7,7 +7,7 @@ description: >-
   including the Developer Center at developer.theice.com for market data
   APIs, the IDS Portal for real-time data integration, and the ICE Mortgage
   Technology Developer Portal for lending application development.
-type: Contract
+kind: contract
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Commodities
