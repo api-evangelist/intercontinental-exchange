@@ -1,0 +1,85 @@
+naftiko: 1.0.0-alpha2
+info:
+  label: ICE Consolidated Feed API — Instruments
+  description: 'ICE Consolidated Feed API — Instruments. 1 operations. Lead operation: List instruments. Self-contained Naftiko
+    capability covering one Intercontinental Exchange business surface.'
+  tags:
+  - Intercontinental Exchange
+  - Instruments
+  created: '2026-05-19'
+  modified: '2026-05-19'
+binds:
+- namespace: env
+  keys:
+    INTERCONTINENTAL_EXCHANGE_API_KEY: INTERCONTINENTAL_EXCHANGE_API_KEY
+capability:
+  consumes:
+  - type: http
+    namespace: ice-consolidated-feed-instruments
+    baseUri: https://api.theice.com
+    description: ICE Consolidated Feed API — Instruments business capability. Self-contained, no shared references.
+    resources:
+    - name: marketdata-instruments
+      path: /marketdata/instruments
+      operations:
+      - name: listinstruments
+        method: GET
+        description: List instruments
+        outputRawFormat: json
+        outputParameters:
+        - name: result
+          type: object
+          value: $.
+        inputParameters:
+        - name: exchange
+          in: query
+          type: string
+          description: Filter by exchange code.
+        - name: productType
+          in: query
+          type: string
+          description: Filter by product type (futures, options, etc.).
+    authentication:
+      type: bearer
+      token: '{{env.INTERCONTINENTAL_EXCHANGE_API_KEY}}'
+  exposes:
+  - type: rest
+    namespace: ice-consolidated-feed-instruments-rest
+    port: 8080
+    description: REST adapter for ICE Consolidated Feed API — Instruments. One Spectral-compliant resource per consumed operation,
+      prefixed with /v1.
+    resources:
+    - path: /v1/marketdata/instruments
+      name: marketdata-instruments
+      description: REST surface for marketdata-instruments.
+      operations:
+      - method: GET
+        name: listinstruments
+        description: List instruments
+        call: ice-consolidated-feed-instruments.listinstruments
+        with:
+          exchange: rest.exchange
+          productType: rest.productType
+        outputParameters:
+        - type: object
+          mapping: $.
+  - type: mcp
+    namespace: ice-consolidated-feed-instruments-mcp
+    port: 9090
+    transport: http
+    description: MCP adapter for ICE Consolidated Feed API — Instruments. One tool per consumed operation, routed inline through
+      this capability's consumes block.
+    tools:
+    - name: list-instruments
+      description: List instruments
+      hints:
+        readOnly: true
+        destructive: false
+        idempotent: true
+      call: ice-consolidated-feed-instruments.listinstruments
+      with:
+        exchange: tools.exchange
+        productType: tools.productType
+      outputParameters:
+      - type: object
+        mapping: $.
