@@ -1,0 +1,120 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "ICE Consolidated Feed API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Instruments",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List instruments",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.theice.com/marketdata/instruments",
+            "params": [
+              {
+                "name": "exchange",
+                "value": "",
+                "type": "query",
+                "description": "Filter by exchange code."
+              },
+              {
+                "name": "productType",
+                "value": "",
+                "type": "query",
+                "description": "Filter by product type (futures, options, etc.)."
+              }
+            ]
+          },
+          "docs": "Retrieves a list of available instruments and contracts across ICE exchanges with filtering by exchange, product type, and status."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Market Data",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get market quotes",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.theice.com/marketdata/quotes",
+            "params": [
+              {
+                "name": "instrumentId",
+                "value": "",
+                "type": "query",
+                "description": "The instrument identifier."
+              }
+            ]
+          },
+          "docs": "Retrieves real-time or delayed market quotes for specified instruments including bid, ask, last trade, and volume."
+        },
+        {
+          "info": {
+            "name": "Get market data history",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.theice.com/marketdata/history",
+            "params": [
+              {
+                "name": "instrumentId",
+                "value": "",
+                "type": "query",
+                "description": "The instrument identifier."
+              },
+              {
+                "name": "startDate",
+                "value": "",
+                "type": "query",
+                "description": "Start date for historical data."
+              },
+              {
+                "name": "endDate",
+                "value": "",
+                "type": "query",
+                "description": "End date for historical data."
+              }
+            ]
+          },
+          "docs": "Retrieves historical market data for a specified instrument including OHLC prices, volume, and open interest."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Reference Data",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List exchanges",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://api.theice.com/reference/exchanges"
+          },
+          "docs": "Retrieves a list of exchanges operated by ICE including exchange codes, names, and available product types."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

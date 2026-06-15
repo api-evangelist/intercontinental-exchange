@@ -1,0 +1,360 @@
+{
+  "item": [
+    {
+      "id": "e3325be0-c013-46f1-a338-bced71f1ac11",
+      "name": "Instruments",
+      "description": {
+        "content": "Retrieve instrument and contract information.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "c65f9090-f9e4-4698-9b98-7fc03fc81968",
+          "name": "List instruments",
+          "request": {
+            "name": "List instruments",
+            "description": {
+              "content": "Retrieves a list of available instruments and contracts across ICE exchanges with filtering by exchange, product type, and status.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "marketdata",
+                "instruments"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "exchange",
+                  "value": "<string>",
+                  "description": "Filter by exchange code."
+                },
+                {
+                  "disabled": false,
+                  "key": "productType",
+                  "value": "<string>",
+                  "description": "Filter by product type (futures, options, etc.)."
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fee4da59-7ac0-4fbb-a8ee-0a23a7bee87e",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "marketdata",
+                    "instruments"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "exchange",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "productType",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "38c7a2d7-6fd5-4257-9d9e-7b669d592e6e",
+      "name": "Market Data",
+      "description": {
+        "content": "Access real-time and delayed market data.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "9f192261-8d85-4338-a057-3838067d52cd",
+          "name": "Get market quotes",
+          "request": {
+            "name": "Get market quotes",
+            "description": {
+              "content": "Retrieves real-time or delayed market quotes for specified instruments including bid, ask, last trade, and volume.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "marketdata",
+                "quotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "instrumentId",
+                  "value": "<string>",
+                  "description": "(Required) The instrument identifier."
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "82fed87b-a190-45b7-ae17-3977f1c3161e",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "marketdata",
+                    "quotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "instrumentId",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "2cd49046-1a79-4423-af08-de40d7a5acfa",
+          "name": "Get market data history",
+          "request": {
+            "name": "Get market data history",
+            "description": {
+              "content": "Retrieves historical market data for a specified instrument including OHLC prices, volume, and open interest.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "marketdata",
+                "history"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "instrumentId",
+                  "value": "<string>",
+                  "description": "(Required) The instrument identifier."
+                },
+                {
+                  "disabled": false,
+                  "key": "startDate",
+                  "value": "<date>",
+                  "description": "Start date for historical data."
+                },
+                {
+                  "disabled": false,
+                  "key": "endDate",
+                  "value": "<date>",
+                  "description": "End date for historical data."
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "e81c24ec-4bcc-481e-99a1-5f97b8669b0e",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "marketdata",
+                    "history"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "instrumentId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "startDate",
+                      "value": "<date>"
+                    },
+                    {
+                      "key": "endDate",
+                      "value": "<date>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    },
+    {
+      "id": "b6a311cd-2594-411b-944d-1db4c48f7801",
+      "name": "Reference Data",
+      "description": {
+        "content": "Access reference and static data.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "9e528840-6521-4fbb-b536-3c4d3704528f",
+          "name": "List exchanges",
+          "request": {
+            "name": "List exchanges",
+            "description": {
+              "content": "Retrieves a list of exchanges operated by ICE including exchange codes, names, and available product types.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "reference",
+                "exchanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "08cf8c23-bf6a-405a-b384-3d4b482e2e49",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "reference",
+                    "exchanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.theice.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "f2d51dd7-2b3b-4844-b996-a542d033fb16",
+    "name": "ICE Consolidated Feed API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The ICE Consolidated Feed API provides access to ICE Data Services real-time and delayed market data from exchanges operated by Intercontinental Exchange including ICE Futures, NYSE, and other trading venues.",
+      "type": "text/plain"
+    }
+  }
+}
