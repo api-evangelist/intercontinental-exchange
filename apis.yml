@@ -81,6 +81,10 @@ apis:
       - type: Documentation
         url: https://mortgagetech.ice.com/products/developer-portal
 common:
+  - type: DomainSecurity
+    url: security/intercontinental-exchange-domain-security.yml
+  - type: Authentication
+    url: authentication/intercontinental-exchange-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/icemarkets
   - type: Portal
