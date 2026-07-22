@@ -1,0 +1,19 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for ICE Consolidated Feed Reference Data API
+  version: 1.0.0
+extends: openapi/intercontinental-exchange-reference-data-api-openapi.yml
+x-generated: '2026-07-22'
+x-method: generated
+actions:
+  - target: $.info
+    update:
+      x-apievangelist-provider: intercontinental-exchange
+      contact:
+        name: ICE Developer Center
+        url: https://developer.theice.com/hc/en-us
+  - target: $.paths['/reference/exchanges'].get
+    update:
+      externalDocs:
+        description: About the Consolidated Feed API
+        url: https://developer.theice.com/hc/en-us/articles/200717514-About-the-Consolidated-Feed-API

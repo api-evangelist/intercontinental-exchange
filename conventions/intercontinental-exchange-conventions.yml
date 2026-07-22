@@ -1,0 +1,32 @@
+generated: '2026-07-22'
+method: derived
+source: openapi/ (Consolidated Feed API docs are gated behind the ICE Developer Center)
+authentication:
+  style: API key in Authorization header, or HTTP bearer token
+  artifact: authentication/intercontinental-exchange-authentication.yml
+idempotency:
+  supported: false
+  notes: >-
+    No idempotency-key contract documented; the public Consolidated Feed surface captured in the
+    OpenAPI is read-only GET operations.
+pagination:
+  style: none-declared
+  notes: no pagination parameters or response envelope fields declared in the harvested OpenAPI
+field_expansion:
+  supported: false
+metadata:
+  supported: false
+request_tracing:
+  header: null
+  notes: no request-id header documented publicly
+versioning:
+  scheme: unknown
+  artifact: lifecycle/intercontinental-exchange-lifecycle.yml
+error_envelope:
+  format: unknown
+  notes: >-
+    Only 200 responses are declared in the harvested OpenAPI; no public error reference found
+    outside the gated Developer Center.
+rate_limits:
+  signaling: unknown
+  artifact: rate-limits/intercontinental-exchange-rate-limits.yml

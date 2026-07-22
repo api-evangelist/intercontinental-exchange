@@ -6,7 +6,7 @@ description: >-
   Developer Center at developer.theice.com for market data APIs, the IDS Portal for real-time data integration, and the
   ICE Mortgage Technology Developer Portal for lending application development.
 kind: contract
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/intercontinental-exchange.png
 tags:
   - Commodities
   - Financial Exchanges
@@ -16,7 +16,7 @@ tags:
   - Fortune 1000
 url: https://raw.githubusercontent.com/api-evangelist/intercontinental-exchange/refs/heads/main/apis.yml
 created: '2026-03-21'
-modified: '2026-05-19'
+modified: '2026-07-22'
 specificationVersion: '0.19'
 apis:
   - aid: intercontinental-exchange:consolidated-feed-api
@@ -41,7 +41,21 @@ apis:
       - type: Documentation
         url: https://developer.theice.com/hc/en-us/articles/200717514-About-the-Consolidated-Feed-API
       - type: OpenAPI
-        url: openapi/ice-consolidated-feed-api-openapi.yml
+        url: openapi/intercontinental-exchange-instruments-api-openapi.yml
+      - type: OpenAPI
+        url: openapi/intercontinental-exchange-market-data-api-openapi.yml
+      - type: OpenAPI
+        url: openapi/intercontinental-exchange-reference-data-api-openapi.yml
+      - type: Overlay
+        url: overlays/intercontinental-exchange-instruments-api-overlay.yaml
+      - type: Overlay
+        url: overlays/intercontinental-exchange-market-data-api-overlay.yaml
+      - type: Overlay
+        url: overlays/intercontinental-exchange-reference-data-api-overlay.yaml
+      - type: Postman
+        url: collections/ice-consolidated-feed-api.postman_collection.json
+      - type: MCPServer
+        url: mcp/intercontinental-exchange-mcp.yml
   - aid: intercontinental-exchange:data-services-api
     name: ICE Data Services API
     description: >-
@@ -87,8 +101,46 @@ common:
     url: security/intercontinental-exchange-domain-security.yml
   - type: Authentication
     url: authentication/intercontinental-exchange-authentication.yml
+  - type: Packages
+    url: packages/intercontinental-exchange-packages.yml
+  - type: SDKs
+    url: packages/intercontinental-exchange-packages.yml
+  - type: WellKnown
+    url: well-known/intercontinental-exchange-well-known.yml
+  - type: LLMsTxt
+    url: llms/intercontinental-exchange-llms.txt
+  - type: Conformance
+    url: conformance/intercontinental-exchange-conformance.yml
+  - type: Compliance
+    url: https://www.ice.com/privacy-security-center/security
+  - type: TrustCenter
+    url: security/intercontinental-exchange-trust-center.yml
+  - type: Lifecycle
+    url: lifecycle/intercontinental-exchange-lifecycle.yml
+  - type: StatusPage
+    url: https://www.ice.com/status
+  - type: Conventions
+    url: conventions/intercontinental-exchange-conventions.yml
+  - type: Components
+    url: components/intercontinental-exchange-components.yml
+  - type: DataModel
+    url: data-model/intercontinental-exchange-data-model.yml
+  - type: AgentSkill
+    url: skills/_index.yml
+  - type: GitHubOrganization
+    url: https://github.com/intercontinentalexchange
+  - type: TermsOfService
+    url: https://www.ice.com/privacy-security-center/terms-of-use
+  - type: PrivacyPolicy
+    url: https://www.ice.com/privacy-security-center
+  - type: Blog
+    url: https://www.ice.com/insights
+  - type: Support
+    url: https://developer.theice.com/hc/en-us
   - type: LinkedIn
     url: https://www.linkedin.com/company/icemarkets
+  - type: DeveloperPortal
+    url: https://developer.theice.com/hc/en-us
   - type: Portal
     url: https://developer.theice.com/hc/en-us
   - type: Website

@@ -1,0 +1,45 @@
+generated: '2026-07-22'
+method: searched
+source: npm registry search + github.com/intercontinentalexchange
+notes: >-
+  ICE distributes its Consolidated Feed SDKs as downloads behind the gated Developer Center
+  (developer.theice.com); no first-party packages for the market data APIs were found on public
+  registries. ICE Mortgage Technology (formerly Ellie Mae) publishes first-party packages on npm
+  under the @elliemae scope, and official Developer Connect bindings on GitHub. PyPI, Maven Central,
+  NuGet, RubyGems, Packagist, and crates.io were searched with no first-party hits.
+packages:
+  - language: javascript
+    registry: npm
+    name: "@elliemae/em-ssf-guest"
+    url: https://www.npmjs.com/package/@elliemae/em-ssf-guest
+    install: npm install @elliemae/em-ssf-guest
+    description: ICE Secure Scripting Framework Guest Library for Encompass Partner Connect integrations.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@elliemae/ds-basic"
+    url: https://www.npmjs.com/package/@elliemae/ds-basic
+    install: npm install @elliemae/ds-basic
+    description: ICE Mortgage Technology (EllieMae) UI Design System component library.
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@elliemae/pui-theme"
+    url: https://www.npmjs.com/package/@elliemae/pui-theme
+    install: npm install @elliemae/pui-theme
+    description: ICE MT Platform UI themes for Encompass web integrations.
+    official: true
+  - language: csharp
+    registry: github
+    name: imt-developerconnect-dotnet-bindings
+    url: https://github.com/intercontinentalexchange/imt-developerconnect-dotnet-bindings
+    install: git clone https://github.com/intercontinentalexchange/imt-developerconnect-dotnet-bindings
+    description: Official .NET bindings for the ICE Mortgage Technology Developer Connect APIs.
+    official: true
+  - language: javascript
+    registry: github
+    name: nyse-bqt-cloudstreaming
+    url: https://github.com/intercontinentalexchange/nyse-bqt-cloudstreaming
+    install: git clone https://github.com/intercontinentalexchange/nyse-bqt-cloudstreaming
+    description: NYSE Best Quote and Trades (BQT) cloud streaming market data client sample.
+    official: true

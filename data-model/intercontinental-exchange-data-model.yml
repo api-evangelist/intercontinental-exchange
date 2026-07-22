@@ -1,0 +1,39 @@
+generated: '2026-07-22'
+method: derived
+source: openapi/ (parameter-level references; the harvested specs declare no component schemas)
+notes: >-
+  Derived from operation parameters only — the public Consolidated Feed OpenAPI declares no
+  components.schemas, so relationships are inferred from id-reference query parameters and
+  marked low confidence.
+entities:
+  - name: Exchange
+    description: A trading venue operated by ICE (ICE Futures, NYSE, and others), identified by exchange code.
+    operations: [listExchanges]
+  - name: Instrument
+    description: A tradable instrument or contract listed on an ICE exchange.
+    operations: [listInstruments]
+  - name: Quote
+    description: A real-time or delayed market quote (bid, ask, last trade, volume) for an instrument.
+    operations: [getQuotes]
+  - name: MarketHistory
+    description: Historical OHLC prices, volume, and open interest for an instrument over a date range.
+    operations: [getMarketHistory]
+relationships:
+  - from: Instrument
+    to: Exchange
+    kind: belongs_to
+    via: exchange
+    confidence: low
+    evidence: listInstruments filters by exchange query parameter
+  - from: Quote
+    to: Instrument
+    kind: belongs_to
+    via: instrumentId
+    confidence: low
+    evidence: getQuotes requires instrumentId query parameter
+  - from: MarketHistory
+    to: Instrument
+    kind: belongs_to
+    via: instrumentId
+    confidence: low
+    evidence: getMarketHistory requires instrumentId query parameter

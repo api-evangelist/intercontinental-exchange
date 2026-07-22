@@ -1,0 +1,19 @@
+generated: '2026-07-22'
+method: searched
+probe: false
+url: https://www.ice.com/privacy-security-center/security
+certifications:
+  - SOC 1
+  - SOC 2
+notes: >-
+  ICE publishes its security program under the Privacy and Security Center: dedicated Information
+  Security Department, mandatory security awareness training, dedicated Application Security team,
+  incident management with customer breach notification policy, geographically-diverse disaster
+  recovery, independent penetration tests, and annual SOC 1 / SOC 2 audits across product
+  offerings. GDPR FAQs and a DORA ICT Services Addendum are published alongside. No standalone
+  trust-center subdomain (trust.ice.com / security.ice.com do not resolve).
+evidence:
+  - source: https://www.ice.com/privacy-security-center/security
+    keywords: [SOC 1, SOC 2, penetration test, incident management, disaster recovery, application security]
+  - source: https://www.ice.com/privacy-security-center
+    keywords: [GDPR, DORA, privacy policy, terms of use]

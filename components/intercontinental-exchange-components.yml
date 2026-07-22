@@ -1,0 +1,25 @@
+generated: '2026-07-22'
+method: searched
+source: npm @elliemae scope + github.com/intercontinentalexchange
+notes: >-
+  ICE Mortgage Technology publishes client-side UI component libraries on npm for building
+  embedded Encompass / LO Connect experiences; sample custom-tool and custom-form apps live in
+  the intercontinentalexchange GitHub org. No embeddable UI components were found for the ICE
+  market data APIs.
+families:
+  - family: Encompass web UI (ICE Mortgage Technology)
+    components:
+      - name: "@elliemae/ds-basic"
+        kind: design-system component library
+        url: https://www.npmjs.com/package/@elliemae/ds-basic
+      - name: "@elliemae/pui-theme"
+        kind: platform UI themes
+        url: https://www.npmjs.com/package/@elliemae/pui-theme
+      - name: "@elliemae/em-ssf-guest"
+        kind: secure scripting framework guest library (embeds partner UIs in Encompass)
+        url: https://www.npmjs.com/package/@elliemae/em-ssf-guest
+    examples:
+      - name: LO Connect custom tool sample
+        url: https://github.com/intercontinentalexchange/imt-loconnect-custom-tool-sample
+      - name: Encompass custom form sample
+        url: https://github.com/intercontinentalexchange/exp24-custom-form

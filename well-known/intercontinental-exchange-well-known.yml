@@ -1,0 +1,81 @@
+generated: '2026-07-22'
+method: searched
+source: live HTTP probes of apis.yml + OpenAPI hosts
+notes: >-
+  No /.well-known/ discovery documents were found on any ICE host. api.theice.com fronts with a
+  530 for unauthenticated paths; api.mortgagetech.ice.com returns 403 for all paths;
+  developer.icemortgagetechnology.com rewrites every path to its docs welcome page (recorded as
+  no real document). Absence recorded as valid probe data.
+hosts:
+  - host: https://www.ice.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://api.theice.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 530
+      - path: /.well-known/openid-configuration
+        status: 530
+      - path: /.well-known/oauth-authorization-server
+        status: 530
+      - path: /.well-known/api-catalog
+        status: 530
+      - path: /.well-known/ai-plugin.json
+        status: 530
+  - host: https://developer.theice.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://idsportal.icedataservices.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+  - host: https://api.mortgagetech.ice.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+      - path: /.well-known/openid-configuration
+        status: 403
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+      - path: /.well-known/api-catalog
+        status: 403
+      - path: /.well-known/ai-plugin.json
+        status: 403
+  - host: https://mortgagetech.ice.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404

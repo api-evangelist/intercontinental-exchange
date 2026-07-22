@@ -1,0 +1,31 @@
+generated: '2026-07-22'
+method: derived
+source: openapi/ + https://www.ice.com/privacy-security-center/security
+standards:
+  - id: oauth2
+    conforms: false
+    evidence: no oauth2 securitySchemes in any OpenAPI; auth is API key (Authorization header) + HTTP bearer
+  - id: oidc
+    conforms: false
+    evidence: no /.well-known/openid-configuration on any ICE host (probed 2026-07-22)
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: no application/problem+json responses declared in the OpenAPI
+  - id: json-api
+    conforms: false
+    evidence: no JSON:API media types or document structure in the OpenAPI
+  - id: pagination
+    conforms: false
+    evidence: no pagination parameters declared in the OpenAPI operations
+  - id: idempotency-key
+    conforms: false
+    evidence: no Idempotency-Key parameter in the OpenAPI (read-only GET surface)
+  - id: soc-1
+    conforms: true
+    evidence: annual SOC 1 audits published at https://www.ice.com/privacy-security-center/security
+  - id: soc-2
+    conforms: true
+    evidence: annual SOC 2 audits published at https://www.ice.com/privacy-security-center/security
+  - id: gdpr
+    conforms: true
+    evidence: GDPR FAQs and DORA ICT Services Addendum published at https://www.ice.com/privacy-security-center

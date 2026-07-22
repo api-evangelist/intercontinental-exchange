@@ -1,0 +1,24 @@
+generated: '2026-07-22'
+method: derived
+status: candidate
+source: openapi/ (no official ICE MCP server found in docs, npm, or MCP registries)
+notes: >-
+  No official hosted or published MCP server was found for ICE, ICE Data Services, or ICE Mortgage
+  Technology. This is a candidate tool list derived one-to-one from the ICE Consolidated Feed
+  OpenAPI operations.
+server:
+  name: intercontinental-exchange
+  transport: http
+tools:
+  - name: list_instruments
+    description: List available instruments and contracts across ICE exchanges, filtered by exchange, product type, and status.
+    source_operation: openapi/intercontinental-exchange-instruments-api-openapi.yml#listInstruments
+  - name: get_quotes
+    description: Get real-time or delayed market quotes for specified instruments including bid, ask, last trade, and volume.
+    source_operation: openapi/intercontinental-exchange-market-data-api-openapi.yml#getQuotes
+  - name: get_market_history
+    description: Get historical market data for an instrument including OHLC prices, volume, and open interest.
+    source_operation: openapi/intercontinental-exchange-market-data-api-openapi.yml#getMarketHistory
+  - name: list_exchanges
+    description: List exchanges operated by ICE including exchange codes, names, and available product types.
+    source_operation: openapi/intercontinental-exchange-reference-data-api-openapi.yml#listExchanges

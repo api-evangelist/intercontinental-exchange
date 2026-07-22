@@ -1,0 +1,30 @@
+openapi: 3.1.0
+info:
+  title: ICE Consolidated Feed Instruments Reference Data API
+  description: The ICE Consolidated Feed API provides access to ICE Data Services real-time and delayed market data from exchanges operated by Intercontinental Exchange including ICE Futures, NYSE, and other trading venues.
+  version: '1.0'
+servers:
+- url: https://api.theice.com
+tags:
+- name: Reference Data
+  description: Access reference and static data.
+paths:
+  /reference/exchanges:
+    get:
+      operationId: listExchanges
+      summary: List exchanges
+      description: Retrieves a list of exchanges operated by ICE including exchange codes, names, and available product types.
+      tags:
+      - Reference Data
+      responses:
+        '200':
+          description: Success
+components:
+  securitySchemes:
+    apiKey:
+      type: apiKey
+      in: header
+      name: Authorization
+    bearerAuth:
+      type: http
+      scheme: bearer

@@ -1,6 +1,7 @@
-generated: '2026-07-11'
+generated: '2026-07-22'
 method: derived
-source: openapi/ice-consolidated-feed-api-openapi.yml
+source: openapi/intercontinental-exchange-instruments-api-openapi.yml, openapi/intercontinental-exchange-market-data-api-openapi.yml,
+  openapi/intercontinental-exchange-reference-data-api-openapi.yml
 summary:
   types:
   - apiKey
@@ -13,9 +14,13 @@ schemes:
   in: header
   parameter: Authorization
   sources:
-  - openapi/ice-consolidated-feed-api-openapi.yml
+  - openapi/intercontinental-exchange-instruments-api-openapi.yml
+  - openapi/intercontinental-exchange-market-data-api-openapi.yml
+  - openapi/intercontinental-exchange-reference-data-api-openapi.yml
 - name: bearerAuth
   type: http
   scheme: bearer
   sources:
-  - openapi/ice-consolidated-feed-api-openapi.yml
+  - openapi/intercontinental-exchange-instruments-api-openapi.yml
+  - openapi/intercontinental-exchange-market-data-api-openapi.yml
+  - openapi/intercontinental-exchange-reference-data-api-openapi.yml

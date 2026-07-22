@@ -1,0 +1,11 @@
+generated: '2026-07-22'
+method: generated
+skills:
+  - file: intercontinental-exchange-quote-an-instrument.md
+    name: Quote an ICE instrument
+    api: openapi/intercontinental-exchange-market-data-api-openapi.yml
+    operations: [listExchanges, listInstruments, getQuotes]
+  - file: intercontinental-exchange-pull-market-history.md
+    name: Pull historical market data
+    api: openapi/intercontinental-exchange-market-data-api-openapi.yml
+    operations: [listInstruments, getMarketHistory]

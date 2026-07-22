@@ -1,0 +1,20 @@
+generated: '2026-07-22'
+method: searched
+source: https://www.ice.com/status
+versioning:
+  scheme: unknown
+  notes: >-
+    The Consolidated Feed API docs sit behind the gated Developer Center (developer.theice.com);
+    no public versioning policy page was found. The harvested OpenAPI declares version '1.0'.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: no public deprecation policy or RFC 8594 Sunset-header documentation found
+sla:
+  url: null
+status_page: https://www.ice.com/status
+status_page_name: ICE Status Center
+additional_status:
+  - name: NYSE Market Status
+    url: https://www.nyse.com/market-status
+deprecated_operations: []
