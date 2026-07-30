@@ -6,6 +6,19 @@ description: >-
   Developer Center at developer.theice.com for market data APIs, the IDS Portal for real-time data integration, and the
   ICE Mortgage Technology Developer Portal for lending application development.
 kind: contract
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/intercontinental-exchange.png
 tags:
   - Commodities
