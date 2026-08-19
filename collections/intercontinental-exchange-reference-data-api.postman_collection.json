@@ -1,0 +1,92 @@
+{
+  "item": [
+    {
+      "id": "957663ed-6264-472c-9c62-bb29f6261290",
+      "name": "Reference Data",
+      "description": {
+        "content": "Access reference and static data.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "dd9c6252-ea8a-439a-882a-c7063f2d7578",
+          "name": "List exchanges",
+          "request": {
+            "name": "List exchanges",
+            "description": {
+              "content": "Retrieves a list of exchanges operated by ICE including exchange codes, names, and available product types.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "reference",
+                "exchanges"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f1b61db3-ecaf-4a2e-b6d4-ea91b0ebb337",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "reference",
+                    "exchanges"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.theice.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "1fc836a2-ec15-488f-b52b-e82ea659d089",
+    "name": "ICE Consolidated Feed Instruments Reference Data API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The ICE Consolidated Feed API provides access to ICE Data Services real-time and delayed market data from exchanges operated by Intercontinental Exchange including ICE Futures, NYSE, and other trading venues.",
+      "type": "text/plain"
+    }
+  }
+}

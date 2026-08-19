@@ -1,0 +1,196 @@
+{
+  "item": [
+    {
+      "id": "86d4912c-90c1-4701-a3d2-c1d0c51a9ea8",
+      "name": "Market Data",
+      "description": {
+        "content": "Access real-time and delayed market data.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "3e53b3fb-9051-4135-a9f4-931be14b4a4c",
+          "name": "Get market quotes",
+          "request": {
+            "name": "Get market quotes",
+            "description": {
+              "content": "Retrieves real-time or delayed market quotes for specified instruments including bid, ask, last trade, and volume.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "marketdata",
+                "quotes"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "instrumentId",
+                  "value": "<string>",
+                  "description": "(Required) The instrument identifier."
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "083a515c-2b94-45e5-9dcf-61dcd89f5e6b",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "marketdata",
+                    "quotes"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "instrumentId",
+                      "value": "<string>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "18dc8eb0-6100-4c4b-9e3c-55cf4726f90d",
+          "name": "Get market data history",
+          "request": {
+            "name": "Get market data history",
+            "description": {
+              "content": "Retrieves historical market data for a specified instrument including OHLC prices, volume, and open interest.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "marketdata",
+                "history"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "instrumentId",
+                  "value": "<string>",
+                  "description": "(Required) The instrument identifier."
+                },
+                {
+                  "disabled": false,
+                  "key": "startDate",
+                  "value": "<date>",
+                  "description": "Start date for historical data."
+                },
+                {
+                  "disabled": false,
+                  "key": "endDate",
+                  "value": "<date>",
+                  "description": "End date for historical data."
+                }
+              ],
+              "variable": []
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "614fd777-ef88-4012-b2ae-873adbcd8763",
+              "name": "Success",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "marketdata",
+                    "history"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "instrumentId",
+                      "value": "<string>"
+                    },
+                    {
+                      "key": "startDate",
+                      "value": "<date>"
+                    },
+                    {
+                      "key": "endDate",
+                      "value": "<date>"
+                    }
+                  ],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.theice.com",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "f6fa32b1-2d46-4ea5-a1b7-5a4aba319690",
+    "name": "ICE Consolidated Feed Instruments Market Data API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The ICE Consolidated Feed API provides access to ICE Data Services real-time and delayed market data from exchanges operated by Intercontinental Exchange including ICE Futures, NYSE, and other trading venues.",
+      "type": "text/plain"
+    }
+  }
+}
