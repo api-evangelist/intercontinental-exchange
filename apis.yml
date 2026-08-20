@@ -80,6 +80,11 @@ apis:
     baseURL: https://idsportal.icedataservices.com
     tags:
       - Analytics
+      - Financial-Services
+      - Market Data
+      - Reference Data
+    tags_raw:
+      - Analytics
       - Financial Services
       - Market Data
       - Reference Data
@@ -98,6 +103,11 @@ apis:
     humanURL: https://mortgagetech.ice.com/products/developer-portal
     baseURL: https://api.mortgagetech.ice.com
     tags:
+      - Financial-Services
+      - Lending
+      - Mortgage
+      - Real-Estate
+    tags_raw:
       - Financial Services
       - Lending
       - Mortgage
