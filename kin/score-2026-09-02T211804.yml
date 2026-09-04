@@ -1,38 +1,45 @@
-# Kin Score artifact — intercontinental-exchange — 2026-08-03T161012
+# Kin Score artifact — intercontinental-exchange — 2026-09-02T211804
 # The API Evangelist rating (https://github.com/api-evangelist/kin-score). Generated; do not edit.
 ---
 kin_score:
   slug: intercontinental-exchange
-  schema_version: 0.9
-  scored_at: '2026-08-03'
-  run_ts: 2026-08-03T161012
-  composite: 51.7
+  schema_version: 0.18.0
+  scored_at: '2026-09-02'
+  run_ts: 2026-09-02T211804
+  composite: 47.0
   band: developing
   facets:
-    discoverability: 92.6
-    contract_quality: 56.6
-    governance: 11.5
-    operational_transparency: 42.1
-    developer_ergonomics: 34.2
-    commercial_clarity: 65.8
+    discoverability: 68.5
+    contract_quality: 49.7
+    governance: 4.5
+    operational_transparency: 23.7
+    developer_ergonomics: 51.8
+    commercial_clarity: 50.0
+    contract_governance: 4.5
+    access_clarity: 50.0
   agent_readiness:
-    score: 35.4
-    band: agent-ready
+    score: 24.0
+    band: agent-aware
     dimensions:
       spec_presence: true
       agentic_access: derived
+      reversibility_documented: na
       mcp_server: false
-      auth_clarity: true
-      idempotency: false
+      auth_clarity: bearer
+      idempotency: na
       error_semantics: false
       openapi_examples: false
       rate_limit_signal: documented
       event_surface_described: false
       agent_skills: derived
-      well_known_catalog: true
+      well_known_catalog: false
       consent_identity: false
       agent_card: false
-      dry_run_mode: false
+      dry_run_mode: na
+      delegated_identity: false
+      protected_resource_metadata: false
+      dynamic_client_registration: false
+      agentic_commerce: false
   regulatory:
     applies: true
     regime: Securities & Market Data
