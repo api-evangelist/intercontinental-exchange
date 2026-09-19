@@ -56,6 +56,12 @@ apis:
     humanURL: https://developer.theice.com/hc/en-us
     baseURL: https://api.theice.com
     tags:
+      - Exchange
+      - Financial Data
+      - Market Data
+      - Real-Time Data
+      - Trading
+    tags_raw:
       - Exchanges
       - Financial Data
       - Market Data
