@@ -1,7 +1,9 @@
 ---
 title: How Intercontinental Exchange is Taking AI from ...
 url: https://www.nvidia.com/en-us/on-demand/session/gtc25-s72463/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Intercontinental Exchange" press release artificial intelligence'
 position: 2
 source: serpapi-google

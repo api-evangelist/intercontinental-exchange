@@ -1,7 +1,9 @@
 ---
 title: Insights on AI and Data Management from Intercontinental ...
 url: https://www.linkedin.com/posts/allysonklein_insights-on-ai-and-data-management-from-intercontinental-activity-7328551226986377217-DQnR
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Intercontinental Exchange" press release artificial intelligence'
 position: 5
 source: serpapi-google

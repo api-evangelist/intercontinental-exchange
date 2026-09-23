@@ -1,7 +1,9 @@
 ---
 title: National Housing Conference and ICE host industry ...
 url: https://nhc.org/press-release/national-housing-conference-and-ice-host-industry-leaders-and-experts-to-explore-technologys-transformative-impact-on-housing-finance/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Intercontinental Exchange" press release artificial intelligence'
 position: 4
 source: serpapi-google

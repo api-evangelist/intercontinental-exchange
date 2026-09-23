@@ -1,7 +1,9 @@
 ---
 title: 'Intercontinental Exchange''s AI Strategy: Analysis of ...'
 url: https://www.klover.ai/intercontinental-exchange-ai-strategy-analysis-of-dominance-in-global-financial-exchanges-clearinghouses/
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Intercontinental Exchange" press release artificial intelligence'
 position: 3
 source: serpapi-google

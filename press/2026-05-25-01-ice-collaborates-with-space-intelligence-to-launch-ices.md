@@ -1,7 +1,9 @@
 ---
 title: ICE Collaborates with Space Intelligence to Launch ICE's ...
 url: https://ir.theice.com/press/news-details/2024/ICE-Collaborates-with-Space-Intelligence-to-Launch-ICEs-Commodity-Traceability-Service/default.aspx
-date: '2026-05-25'
+published: ''
+date_basis: harvested
+harvested: '2026-05-25'
 query: '"Intercontinental Exchange" press release artificial intelligence'
 position: 1
 source: serpapi-google
