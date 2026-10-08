@@ -141,6 +141,12 @@ apis:
       - type: Documentation
         url: https://mortgagetech.ice.com/products/developer-portal
 common:
+  - type: Plans
+    url: plans/intercontinental-exchange-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/intercontinental-exchange-rate-limits.yml
+  - type: FinOps
+    url: finops/intercontinental-exchange-finops.yml
   - type: AgenticAccess
     url: agentic-access/intercontinental-exchange-agentic-access.yml
   - type: DomainSecurity
