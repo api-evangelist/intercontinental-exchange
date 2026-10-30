@@ -1,4 +1,4 @@
-# Intercontinental Exchange (intercontinental-exchange)
+# Intercontinental Exchange
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,95 +66,141 @@
 
 Intercontinental Exchange (ICE) operates global exchanges, clearing houses, and data services for financial and commodity markets, including the New York Stock Exchange (NYSE). ICE provides multiple developer portals including the Developer Center at developer.theice.com for market data APIs, the IDS Portal for real-time data integration, and the ICE Mortgage Technology Developer Portal for lending application development.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/intercontinental-exchange/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/intercontinental-exchange/refs/heads/main/apis.yml)
+**Areas:** Commodities · Financial Exchanges · Market Data · NYSE · Trading · Fortune 1000
 
-## Tags
+## Intercontinental Exchange on APIs.io
 
-- Commodities
-- Financial Exchanges
-- Market Data
-- NYSE
-- Trading
+Everything profiled for Intercontinental Exchange is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/intercontinental-exchange/](https://apis.io/providers/intercontinental-exchange/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (3)
 
-- **Created:** 2026-03-21
-- **Modified:** 2026-05-19
+- [ICE Consolidated Feed API](https://apis.io/apis/intercontinental-exchange/consolidated-feed-api/) — The ICE Consolidated Feed API provides developers with access to ICE Data Services real-time and delayed market data. The API delivers consolidated market…
+- [ICE Data Services API](https://apis.io/apis/intercontinental-exchange/data-services-api/) — The ICE Data Services API provides access to market data, reference data, and analytics from Intercontinental Exchange. The IDS Portal provides…
+- [ICE Mortgage Technology Developer Portal](https://apis.io/apis/intercontinental-exchange/mortgage-technology-api/) — The ICE Mortgage Technology Developer Portal is a self-service solution providing developers with resources and documentation to build and deploy mortgage…
 
-## APIs
+### Published properties
 
-### ICE Consolidated Feed API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-The ICE Consolidated Feed API provides developers with access to ICE Data Services real-time and delayed market data. The API delivers consolidated market data feeds from exchanges operated by Intercontinental Exchange including ICE Futures, NYSE, and other trading venues. The Developer Center provides detailed API documentation, samples, and SDK downloads.
+#### MCP servers (1)
 
-- **Human URL:** [https://developer.theice.com/hc/en-us](https://developer.theice.com/hc/en-us)
-- **Base URL:** `https://api.theice.com`
+Model Context Protocol servers that expose the API to agents.
 
-#### Tags
+- [intercontinental-exchange](https://apis.io/servers/intercontinental-exchange/intercontinental-exchange/)
 
-- Exchanges
-- Financial Data
-- Market Data
-- Real-Time Data
-- Trading
+#### Agentic access (1)
 
-#### Properties
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Portal](https://developer.theice.com/hc/en-us)
-- [Documentation](https://developer.theice.com/hc/en-us/articles/200717514-About-the-Consolidated-Feed-API)
-- [OpenAPI](openapi/ice-consolidated-feed-api-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/ice-consolidated-feed-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/ice-consolidated-feed-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Intercontinental Exchange Agentic Access](https://apis.io/agentic-access/intercontinental-exchange/intercontinental-exchange-agentic-access/)
 
-### ICE Data Services API
+#### Collections (4)
 
-The ICE Data Services API provides access to market data, reference data, and analytics from Intercontinental Exchange. The IDS Portal provides documentation, tools, and software required for integrating with ICE Data Services real-time market data solutions.
+Postman and Open Collection request collections.
 
-- **Human URL:** [https://idsportal.icedataservices.com/marketdata](https://idsportal.icedataservices.com/marketdata)
-- **Base URL:** `https://idsportal.icedataservices.com`
+- [ICE Consolidated Feed API](https://apis.io/collections/intercontinental-exchange/open-ice-consolidated-feed-api/)
+- [ICE Consolidated Feed Instruments API](https://apis.io/collections/intercontinental-exchange/open-intercontinental-exchange-instruments-api/)
+- [ICE Consolidated Feed Instruments Market Data API](https://apis.io/collections/intercontinental-exchange/open-intercontinental-exchange-market-data-api/)
+- [ICE Consolidated Feed Instruments Reference Data API](https://apis.io/collections/intercontinental-exchange/open-intercontinental-exchange-reference-data-api/)
 
-#### Tags
+#### Overlays (3)
 
-- Analytics
-- Financial Services
-- Market Data
-- Reference Data
+OpenAPI overlays, including conversational phrasing for each operation.
 
-#### Properties
+- [Intercontinental Exchange Instruments Api Overlay](https://apis.io/overlays/intercontinental-exchange/intercontinental-exchange-instruments-api-overlay/)
+- [Intercontinental Exchange Market Data Api Overlay](https://apis.io/overlays/intercontinental-exchange/intercontinental-exchange-market-data-api-overlay/)
+- [Intercontinental Exchange Reference Data Api Overlay](https://apis.io/overlays/intercontinental-exchange/intercontinental-exchange-reference-data-api-overlay/)
 
-- [Portal](https://idsportal.icedataservices.com/marketdata)
-- [Documentation](https://idsportal.icedataservices.com/marketdata)
-- [Postman Collection](collections/ice-consolidated-feed-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/ice-consolidated-feed-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Security (3)
 
-### ICE Mortgage Technology Developer Portal
+Authentication, trust centre, and vulnerability disclosure.
 
-The ICE Mortgage Technology Developer Portal is a self-service solution providing developers with resources and documentation to build and deploy mortgage lending applications. It includes a comprehensive integration catalog representing the servicing life cycle for mortgage origination and servicing workflows.
+- [Intercontinental Exchange Authentication](https://apis.io/security/intercontinental-exchange/intercontinental-exchange-authentication/)
+- [Intercontinental Exchange Domain Security](https://apis.io/security/intercontinental-exchange/intercontinental-exchange-domain-security/)
+- [Intercontinental Exchange Trust Center](https://apis.io/security/intercontinental-exchange/intercontinental-exchange-trust-center/)
 
-- **Human URL:** [https://mortgagetech.ice.com/products/developer-portal](https://mortgagetech.ice.com/products/developer-portal)
-- **Base URL:** `https://api.mortgagetech.ice.com`
+#### Plans and pricing (1)
 
-#### Tags
+Published plans, tiers and prices.
 
-- Financial Services
-- Lending
-- Mortgage
-- Real Estate
+- [Intercontinental Exchange Plans Pricing](https://apis.io/plans/intercontinental-exchange/intercontinental-exchange-plans-pricing/)
 
-#### Properties
+#### Rate limits (1)
 
-- [Portal](https://mortgagetech.ice.com/products/developer-portal)
-- [Documentation](https://mortgagetech.ice.com/products/developer-portal)
-- [Postman Collection](collections/ice-consolidated-feed-api.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/ice-consolidated-feed-api.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Published request limits.
 
-## Common Properties
+- [Intercontinental Exchange Rate Limits](https://apis.io/rate-limits/intercontinental-exchange/intercontinental-exchange-rate-limits/)
 
-- [LinkedIn](https://www.linkedin.com/company/icemarkets)
-- [Portal](https://developer.theice.com/hc/en-us)
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Intercontinental Exchange Finops](https://apis.io/finops/intercontinental-exchange/intercontinental-exchange-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.ice.com/)
+- [Support](https://developer.theice.com/hc/en-us)
+- [Blog](https://www.ice.com/insights)
+- [Compliance](https://www.ice.com/privacy-security-center/security)
+- [Terms of service](https://www.ice.com/privacy-security-center/terms-of-use)
+- [Privacy policy](https://www.ice.com/privacy-security-center)
+- [GitHub](https://github.com/intercontinentalexchange)
+- [Status](https://www.ice.com/status)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** API Evangelist
-**Email:** info@apievangelist.com
+**Kin Score 41.4** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 44.7 |
+| Contract governance | 4.5 |
+| Operational transparency | 23.7 |
+| Developer ergonomics | 48.2 |
+| Access clarity | 42.1 |
+
+**Agent readiness 21.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 33.3** — Securities & Market Data
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/intercontinental-exchange/](https://apis.io/providers/intercontinental-exchange/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Intercontinental Exchange: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/intercontinental-exchange/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
