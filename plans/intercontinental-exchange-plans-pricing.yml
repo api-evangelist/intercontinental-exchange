@@ -1,0 +1,70 @@
+specification: API Commons Plans
+specificationVersion: '0.1'
+schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
+provider: Intercontinental Exchange
+providerId: intercontinental-exchange
+created: '2026-05-04'
+# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
+# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
+method: generated
+modified: '2026-05-05'
+reconciled: false
+tags:
+  - Commodities
+  - Financial Exchanges
+  - Market Data
+  - NYSE
+  - Trading
+description: Intercontinental Exchange does not publish public, self-service pricing for the ICE Consolidated
+  Feed API, ICE Data Services API, or ICE Mortgage Technology Developer Portal. Access is sold under
+  enterprise/contract terms negotiated through ICE sales, with pricing tied to data feeds, market coverage,
+  redistribution rights, and connectivity. Plan structure below is a contractual placeholder until ICE
+  publishes machine-readable pricing.
+notes: No public pricing page is available. All ICE API access is contractual; consumers must engage
+  ICE Data Services or ICE Mortgage Technology sales for terms, entitlements, and fees.
+sources:
+  - https://developer.theice.com/hc/en-us
+  - https://idsportal.icedataservices.com/marketdata
+  - https://mortgagetech.ice.com/products/developer-portal
+plans:
+  - id: intercontinental-exchange-contract
+    name: ICE Contract Access
+    type: enterprise
+    description: Negotiated contract access to ICE Consolidated Feed, ICE Data Services, and ICE Mortgage
+      Technology APIs. Pricing depends on data scope, redistribution, and connectivity model.
+    entries:
+      - label: Contract Pricing
+        name: contract
+        type: subscription
+        metric: contract
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: contact sales
+        userMultiplied: false
+    elements:
+      - name: ICE Consolidated Feed API
+      - name: ICE Data Services API
+      - name: ICE Mortgage Technology Developer Portal
+      - name: Negotiated SLA
+      - name: Dedicated technical account management
+maintainers:
+  - FN: API Evangelist
+    email: info@apievangelist.com
+x-canonical:
+  generated: '2026-11-01'
+  vocabulary: engine/economics/plans-canonical.yml
+  models:
+  - subscription
+  units:
+  - negotiated
+  plans:
+  - name: ICE Contract Access
+    access: enterprise
+    model: subscription
+    model_how: derived
+    units:
+    - negotiated
+    periods:
+    - month
