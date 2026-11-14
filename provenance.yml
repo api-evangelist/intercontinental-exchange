@@ -5,10 +5,19 @@ artifacts:
   agentic-access/intercontinental-exchange-agentic-access.yml:
     method: generated
     evidence: declared in the artifact
+  ai-preferences/intercontinental-exchange-ai-preferences.yml:
+    method: harvested
+    evidence: declared in the artifact
   authentication/intercontinental-exchange-authentication.yml:
     method: derived
     evidence: declared in the artifact
   capabilities/intercontinental-exchange-capability-edges.yml:
+    method: unknown
+    evidence: no authorship recorded
+  certification/observations-2026-11-11.jsonl:
+    method: unknown
+    evidence: no authorship recorded
+  certification/status.yml:
     method: unknown
     evidence: no authorship recorded
   collections/ice-consolidated-feed-api.opencollection.json:
@@ -35,6 +44,9 @@ artifacts:
   collections/intercontinental-exchange-reference-data-api.postman_collection.json:
     method: derived
     evidence: openapi/intercontinental-exchange-reference-data-api
+  compliance/intercontinental-exchange-compliance.yml:
+    method: harvested
+    evidence: declared in the artifact
   components/intercontinental-exchange-components.yml:
     method: searched
     evidence: declared in the artifact
@@ -44,8 +56,14 @@ artifacts:
   conventions/intercontinental-exchange-conventions.yml:
     method: derived
     evidence: declared in the artifact
+  data-license/intercontinental-exchange-data-license.yml:
+    method: harvested
+    evidence: declared in the artifact
   data-model/intercontinental-exchange-data-model.yml:
     method: derived
+    evidence: declared in the artifact
+  eligibility/intercontinental-exchange-eligibility.yml:
+    method: harvested
     evidence: declared in the artifact
   finops/intercontinental-exchange-finops.yml:
     method: generated
@@ -59,6 +77,9 @@ artifacts:
   heartbeat/2026-11-06.yml:
     method: unknown
     evidence: no authorship recorded
+  heartbeat/2026-11-13.yml:
+    method: unknown
+    evidence: no authorship recorded
   integrations/_index.yml:
     method: generated
     evidence: carries an API Evangelist house phrase
@@ -68,7 +89,7 @@ artifacts:
   kin/checks-2026-10-23T222754.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
-  kin/checks-2026-11-02T082323.yml:
+  kin/checks-2026-11-06T143934.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
   kin/score-2026-09-23T000603.yml:
@@ -134,6 +155,9 @@ artifacts:
   kin/score-2026-11-02T082323.yml:
     method: generated
     evidence: Kin Score snapshot written by score.rb
+  kin/score-2026-11-06T143934.yml:
+    method: generated
+    evidence: Kin Score snapshot written by score.rb
   lifecycle/intercontinental-exchange-lifecycle.yml:
     method: searched
     evidence: declared in the artifact
@@ -189,6 +213,9 @@ artifacts:
   press/2026-05-25-05-insights-on-ai-and-data-management-from-intercontinental.md:
     method: unknown
     evidence: no authorship recorded
+  privacy/intercontinental-exchange-privacy-policy.yml:
+    method: harvested
+    evidence: declared in the artifact
   rate-limits/intercontinental-exchange-rate-limits.yml:
     method: generated
     evidence: declared in the artifact
@@ -227,6 +254,9 @@ artifacts:
     evidence: declared in the artifact
   sla/intercontinental-exchange-sla.yml:
     method: generated
+    evidence: declared in the artifact
+  terms/intercontinental-exchange-terms-of-service.yml:
+    method: harvested
     evidence: declared in the artifact
   well-known/intercontinental-exchange-well-known.yml:
     method: searched
